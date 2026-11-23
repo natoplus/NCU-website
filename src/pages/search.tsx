@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import Seo from '@/components/Seo'
 import { staticPages } from '@/data/pages'
 import { universes } from '@/data/universes'
+import UniverseCard from '@/components/UniverseCard'
 
 interface SearchResult {
   title: string
@@ -40,7 +41,7 @@ export default function SearchPage() {
   return (
     <>
       <Seo title="Search NCU" description="Search NCU universes, reader guides, characters and announcements." />
-      <section className="page-hero">
+      <section className="page-hero editorial-page-hero">
         <div className="site-container page-hero-inner">
           <p className="eyebrow">Explore the archive</p>
           <h1>Search NCU.</h1>
@@ -90,6 +91,24 @@ export default function SearchPage() {
               <p>Try a different title, genre or guide topic.</p>
             </div>
           )}
+        </div>
+      </section>
+      <section className="editorial-section editorial-section-alt">
+        <div className="site-container">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Browse by world</p>
+              <h2>Explore without<br />a search term.</h2>
+            </div>
+            <p>Go straight to the universe profiles or use a reader guide to find a path through the NCU.</p>
+          </div>
+          <div className="universe-grid">
+            {universes.slice(0, 3).map((universe) => <UniverseCard key={universe.slug} universe={universe} />)}
+          </div>
+          <div className="editorial-list" style={{ marginTop: 22 }}>
+            <article className="editorial-list-item"><strong>New to NCU?</strong><p>Get a quick orientation and find your first world.</p><Link className="text-link" href="/start-here">Start here <span aria-hidden="true">↗</span></Link></article>
+            <article className="editorial-list-item"><strong>Looking for updates?</strong><p>Check confirmed announcements and the current newsletter status.</p><Link className="text-link" href="/news">NCU news <span aria-hidden="true">↗</span></Link></article>
+          </div>
         </div>
       </section>
     </>

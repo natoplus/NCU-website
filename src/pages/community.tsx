@@ -14,14 +14,14 @@ export default function CommunityPage() {
   return (
     <>
       <Seo title="Community guidelines" description="Respectful fan and community guidance for NCU story worlds." />
-      <section className="page-hero">
+      <section className="page-hero editorial-page-hero">
         <div className="site-container page-hero-inner">
           <p className="eyebrow">Fan and community guidance</p>
           <h1>Make room<br />for every reader.</h1>
           <p className="page-lead">These guidelines are a starting point for respectful conversation and fan creativity around NCU stories.</p>
         </div>
       </section>
-      <section className="section">
+      <section className="editorial-section">
         <div className="site-container">
           <div className="feature-grid">
             {guidelines.map(([title, description], index) => (
@@ -39,7 +39,7 @@ export default function CommunityPage() {
           </div>
         </div>
       </section>
-      <section className="section section-border">
+      <section className="editorial-section editorial-section-alt">
         <div className="site-container">
           <div className="section-heading">
             <div>
@@ -52,6 +52,23 @@ export default function CommunityPage() {
             <article className="feature-card"><span className="card-index">FAN ART &amp; FICTION</span><h3>Make it clearly yours.</h3><p>Label fan-created work as unofficial, credit the inspiration where appropriate and do not present it as an official NCU release.</p></article>
             <article className="feature-card"><span className="card-index">SPOILERS</span><h3>Give readers a choice.</h3><p>Use a clear warning before discussing details beyond a published introduction or chapter.</p></article>
             <article className="feature-card"><span className="card-index">OFFICIAL SPACES</span><h3>Follow verified links.</h3><p>Only trust community channels linked directly by Nartstudio. No NCU forum or Discord invite is published here.</p></article>
+          </div>
+        </div>
+      </section>
+      <section className="editorial-section">
+        <div className="site-container">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">A useful starting point</p>
+              <h2>Keep the conversation<br />welcoming and clear.</h2>
+            </div>
+            <p>Use published guidance for story questions, permissions, spoilers and finding official destinations.</p>
+          </div>
+          <div className="editorial-list">
+            <article className="editorial-list-item"><strong>Ask a reader question</strong><p>For comic access and chapter support, use Pylothouse’s own support channels.</p><Link className="text-link" href="/faq">Read the FAQ <span aria-hidden="true">↗</span></Link></article>
+            <article className="editorial-list-item"><strong>Discuss a release</strong><p>Identify the title or chapter and mark plot details so other readers can choose whether to continue.</p><Link className="text-link" href="/reading-order">Reader guidance <span aria-hidden="true">↗</span></Link></article>
+            <article className="editorial-list-item"><strong>Request permission</strong><p>Contact the studio before reproducing, adapting or commercially using NCU material.</p><Link className="text-link" href="/licensing">Rights and licensing <span aria-hidden="true">↗</span></Link></article>
+            <article className="editorial-list-item"><strong>Find official channels</strong><p>Use links published by Nartstudio; no independent NCU forum or Discord is listed here.</p><Link className="text-link" href="/contact">Contact Nartstudio <span aria-hidden="true">↗</span></Link></article>
           </div>
         </div>
       </section>

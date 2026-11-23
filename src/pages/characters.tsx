@@ -1,18 +1,20 @@
 import Link from 'next/link'
 import Seo from '@/components/Seo'
+import UniverseCard from '@/components/UniverseCard'
+import { universes } from '@/data/universes'
 
 export default function CharactersPage() {
   return (
     <>
       <Seo title="Character archive" description="The NCU character archive is in progress. Explore the current universe introductions while profiles are prepared." />
-      <section className="page-hero">
+      <section className="page-hero editorial-page-hero">
         <div className="site-container page-hero-inner">
           <p className="eyebrow">The character archive</p>
           <h1>Meet the<br />world-makers.</h1>
           <p className="page-lead">Every universe is shaped by the people who inhabit it. Character profiles are being prepared; this page will grow as approved information becomes available.</p>
         </div>
       </section>
-      <section className="section">
+      <section className="editorial-section">
         <div className="site-container">
           <div className="empty-state">
             <p className="eyebrow">Archive in progress</p>
@@ -22,7 +24,7 @@ export default function CharactersPage() {
           </div>
         </div>
       </section>
-      <section className="section section-border">
+      <section className="editorial-section editorial-section-alt">
         <div className="site-container">
           <div className="section-heading">
             <div>
@@ -39,6 +41,31 @@ export default function CharactersPage() {
           <div className="content-end-links">
             <Link className="text-link" href="/reading-order">Reader guide <span aria-hidden="true">↗</span></Link>
             <Link className="text-link" href="/newsletter">Request updates <span aria-hidden="true">↗</span></Link>
+          </div>
+        </div>
+      </section>
+      <section className="editorial-section">
+        <div className="site-container">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Meet a world first</p>
+              <h2>Every cast belongs<br />to a bigger setting.</h2>
+            </div>
+            <p>Explore the worlds while the character archive is prepared. These links lead to approved, spoiler-light universe introductions.</p>
+          </div>
+          <div className="universe-grid">
+            {universes.slice(0, 3).map((universe) => <UniverseCard key={universe.slug} universe={universe} />)}
+          </div>
+        </div>
+      </section>
+      <section className="editorial-section editorial-section-alt">
+        <div className="site-container">
+          <div className="editorial-cta">
+            <div>
+              <p className="eyebrow">Follow the archive</p>
+              <h2>Get the signal when profiles are published.</h2>
+            </div>
+            <Link className="button" href="/newsletter">NCU updates <span aria-hidden="true">↗</span></Link>
           </div>
         </div>
       </section>

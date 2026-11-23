@@ -32,7 +32,24 @@ export default function UniversePage({ universe }: InferGetStaticPropsType<typeo
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="editorial-section editorial-section-alt">
+        <div className="site-container editorial-split">
+          <div className="editorial-split-art">
+            <UniverseArtwork universe={universe} />
+          </div>
+          <div className="editorial-split-copy">
+            <p className="eyebrow">{universe.genre} · NCU world guide</p>
+            <h2>{universe.tagline}</h2>
+            <p>{universe.summary}</p>
+            <p>This introduction stays focused on the world’s published premise and genre. It is a place to get oriented before choosing whether to continue to the comic library.</p>
+            <div className="content-end-links">
+              <Link className="text-link" href="/start-here">How to start reading <span aria-hidden="true">↗</span></Link>
+              <Link className="text-link" href="/characters">Character archive <span aria-hidden="true">↗</span></Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="editorial-section">
         <div className="site-container">
           <div className="section-heading">
             <div>
@@ -53,7 +70,24 @@ export default function UniversePage({ universe }: InferGetStaticPropsType<typeo
           <p className="notice-strip" style={{ marginTop: 26 }}>Ratings, content notes and chapter-specific spoiler controls will be shown when approved release information is available.</p>
         </div>
       </section>
-      <section className="section section-border">
+      <section className="editorial-section editorial-section-alt">
+        <div className="site-container">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Take the next step</p>
+              <h2>From the world guide<br />to the comic library.</h2>
+            </div>
+            <p>This site introduces the setting. The official Pylothouse library is the place to check for currently available comics and chapter details.</p>
+          </div>
+          <div className="editorial-list">
+            <article className="editorial-list-item"><strong>01 / Meet the premise</strong><p>Use this page for the spoiler-light overview and story themes.</p></article>
+            <article className="editorial-list-item"><strong>02 / Choose a starting point</strong><p>No cross-universe reading chronology is required or published here.</p></article>
+            <article className="editorial-list-item"><strong>03 / Check current availability</strong><p>Follow the external library for published titles and chapter-level information.</p></article>
+            <article className="editorial-list-item"><strong>04 / Return for updates</strong><p>Confirmed changes to this guide and NCU announcements will be collected on the news page.</p></article>
+          </div>
+        </div>
+      </section>
+      <section className="editorial-section">
         <div className="site-container">
           <div className="section-heading">
             <div>
@@ -69,7 +103,7 @@ export default function UniversePage({ universe }: InferGetStaticPropsType<typeo
           </div>
         </div>
       </section>
-      <section className="section section-border">
+      <section className="editorial-section editorial-section-alt">
         <div className="site-container">
           <div className="dark-callout">
             <div>

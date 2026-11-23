@@ -38,6 +38,7 @@ export default function HomePage() {
               width="1112"
               height="768"
               fetchPriority="high"
+              data-parallax="0.04"
             />
           </div>
           <div className="home-hero-content">

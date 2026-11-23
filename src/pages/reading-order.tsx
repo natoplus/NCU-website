@@ -1,20 +1,21 @@
 import Link from 'next/link'
 import Seo from '@/components/Seo'
 import { universes } from '@/data/universes'
+import UniverseArtwork from '@/components/UniverseArtwork'
 import { PYLOTHOUSE_COMICS_URL } from '@/lib/site'
 
 export default function ReadingOrderPage() {
   return (
     <>
       <Seo title="Reading order" description="Choose any NCU universe to begin. No cross-universe reading chronology has been published." />
-      <section className="page-hero">
+      <section className="page-hero editorial-page-hero">
         <div className="site-container page-hero-inner">
           <p className="eyebrow">Reader guide</p>
           <h1>Start with<br />any world.</h1>
           <p className="page-lead">There is no published cross-universe chronology yet. These story worlds are presented as independent starting points; follow each available release on Pylothouse.</p>
         </div>
       </section>
-      <section className="section">
+      <section className="editorial-section">
         <div className="site-container">
           <div className="section-heading">
             <div>
@@ -42,6 +43,22 @@ export default function ReadingOrderPage() {
             ))}
           </ol>
           <a className="button" href={PYLOTHOUSE_COMICS_URL} target="_blank" rel="noopener noreferrer">Browse comics on Pylothouse <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+      <section className="editorial-section editorial-section-alt">
+        <div className="site-container editorial-split">
+          <div className="editorial-split-art">
+            <UniverseArtwork universe={universes[2]} />
+          </div>
+          <div className="editorial-split-copy">
+            <p className="eyebrow">A living reader guide</p>
+            <h2>Follow published order, not guesswork.</h2>
+            <p>If a universe gains an official chapter sequence or a verified crossover order, this page can point readers to that source. Until then, each universe stands as its own entry point.</p>
+            <div className="hero-actions">
+              <Link className="button" href="/universes">Choose a universe <span aria-hidden="true">↗</span></Link>
+              <Link className="button button-secondary" href="/faq">Reader FAQ</Link>
+            </div>
+          </div>
         </div>
       </section>
     </>

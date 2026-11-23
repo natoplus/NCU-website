@@ -11,10 +11,10 @@ export default function UniverseArtwork({ universe, className = '' }: UniverseAr
   return (
     <div className={`universe-artwork ${className}`} style={style}>
       {universe.image ? (
-        <img src={universe.image} alt={`${universe.title} universe artwork`} loading="lazy" decoding="async" />
+        <img src={universe.image} alt={`${universe.title} universe artwork`} loading="lazy" decoding="async" data-parallax="0.08" />
       ) : (
         <div className="artwork-placeholder" aria-hidden="true">
-          <span className="artwork-orbit" />
+          <span className="artwork-orbit" data-parallax="0.06" />
           <span className="artwork-wordmark">{universe.title}</span>
           <span className="artwork-caption">NCU STORY WORLD</span>
         </div>
