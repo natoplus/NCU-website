@@ -55,7 +55,19 @@ export default function SearchPage() {
       <section className="section">
         <div className="site-container">
           {!query ? (
-            <p className="notice-strip">Enter a search term to find a universe or guide.</p>
+            <>
+              <p className="notice-strip">Enter a search term to find a universe or guide, or start with one of these directory links.</p>
+              <div className="path-grid" style={{ marginTop: 24 }}>
+                {universes.slice(0, 3).map((universe, index) => (
+                  <article className="path-card" key={universe.slug}>
+                    <span className="card-index">{String(index + 1).padStart(2, '0')} / UNIVERSE</span>
+                    <h3>{universe.title}</h3>
+                    <p>{universe.genre} · {universe.summary}</p>
+                    <Link className="text-link" href={`/universes/${universe.slug}`}>Open world guide <span aria-hidden="true">↗</span></Link>
+                  </article>
+                ))}
+              </div>
+            </>
           ) : results.length ? (
             <>
               <p className="eyebrow">{results.length} result{results.length === 1 ? '' : 's'} for “{query}”</p>

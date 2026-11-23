@@ -32,6 +32,14 @@ export const staticPages: StaticPage[] = [
         heading: 'Looking for character profiles?',
         paragraphs: ['The character archive is still in progress. Universe pages provide the currently available introductions without inventing unpublished character details.'],
       },
+      {
+        heading: 'Need a spoiler-light introduction?',
+        paragraphs: ['Each universe profile focuses on its high-level premise and published themes. Chapter-level plot details belong with the official releases on Pylothouse.'],
+      },
+      {
+        heading: 'Want to follow new releases?',
+        paragraphs: ['The NCU News page will carry confirmed announcements. Email updates can be requested once the mailing-list service is connected.'],
+      },
     ],
   },
   {
@@ -52,6 +60,14 @@ export const staticPages: StaticPage[] = [
         heading: 'Part of Nartstudio',
         paragraphs: ['NCU is one part of the wider Nartstudio creative family, alongside Oubyt and Pylothouse.'],
       },
+      {
+        heading: 'Seven listed story worlds',
+        paragraphs: ['The current directory includes Lord’s Lounge, M.O.D, NATOVERSE, The Unliving Sage, False Magic, Holo Host and Royal Target. Each has a separate genre and introduction.'],
+      },
+      {
+        heading: 'An evolving reference',
+        paragraphs: ['The guide will expand as approved universe notes, release details and character profiles become available. Unpublished canon and unconfirmed schedules are intentionally left out.'],
+      },
     ],
   },
   {
@@ -67,6 +83,14 @@ export const staticPages: StaticPage[] = [
       {
         heading: 'Studio enquiries',
         paragraphs: ['For press, licensing, partnerships or general studio questions, use the Nartstudio contact page. Please do not send confidential project material before an NDA is agreed.'],
+      },
+      {
+        heading: 'Choose the right destination',
+        paragraphs: ['Press and interview requests can start with the studio team. Rights, adaptation and usage questions belong on the licensing page. Comic account or reading problems should go to Pylothouse.'],
+      },
+      {
+        heading: 'What to include',
+        paragraphs: ['For a useful reply, identify the universe or release you are asking about, describe the request briefly and provide a contact method. Do not attach private or confidential material.'],
       },
     ],
   },
@@ -85,6 +109,14 @@ export const staticPages: StaticPage[] = [
         heading: 'Assets and interviews',
         paragraphs: ['No downloadable press kit or interview schedule is published yet. Contact Nartstudio for approved logos, artwork, interview requests or usage permissions.'],
       },
+      {
+        heading: 'Using NCU facts',
+        paragraphs: ['Use the current universe names and high-level descriptions shown in this guide. Treat release dates, ratings, crossovers and character details as unconfirmed unless they appear in an official announcement.'],
+      },
+      {
+        heading: 'Press contact',
+        paragraphs: ['Route editorial, interview and approved-asset requests through Nartstudio’s contact page. No press-kit files are offered for download yet.'],
+      },
     ],
   },
   {
@@ -100,6 +132,14 @@ export const staticPages: StaticPage[] = [
       {
         heading: 'Before you write',
         paragraphs: ['Do not submit confidential creative material or assume that unsolicited concepts can be reviewed. Nartstudio will confirm the appropriate process after receiving your enquiry.'],
+      },
+      {
+        heading: 'Helpful enquiry details',
+        paragraphs: ['Include the property or universe, intended medium, territories, proposed audience, timeline and your organization or professional role. These details help route the request; they do not imply availability.'],
+      },
+      {
+        heading: 'Rights and permissions',
+        paragraphs: ['Do not reproduce or adapt NCU characters, story worlds, comics or artwork without written permission from the relevant rights-holder.'],
       },
     ],
   },
@@ -124,6 +164,18 @@ export const staticPages: StaticPage[] = [
       {
         heading: 'Can I use NCU artwork or characters?',
         paragraphs: ['Please request permission before using or reposting NCU artwork or story material. See the community and copyright guidance for more information.'],
+      },
+      {
+        heading: 'Are ratings and content notes available?',
+        paragraphs: ['This guide does not yet have approved chapter-level ratings or content notes. Check the relevant Pylothouse release page before reading.'],
+      },
+      {
+        heading: 'Does NCU have an official Discord?',
+        paragraphs: ['No official Discord or community forum is linked from this site at this time. Use only community spaces linked by Nartstudio.'],
+      },
+      {
+        heading: 'Can I get email updates?',
+        paragraphs: ['The newsletter form reports when signup is unavailable. Email updates will only be delivered after Nartstudio configures and tests the mailing-list service.'],
       },
     ],
   },

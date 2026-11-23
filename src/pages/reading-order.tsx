@@ -16,7 +16,19 @@ export default function ReadingOrderPage() {
       </section>
       <section className="section">
         <div className="site-container">
-          <p className="notice-strip">The list below is a discovery guide, not a release order. Exact series and chapter links will be added when confirmed.</p>
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">A simple route</p>
+              <h2>Three steps.<br />No homework.</h2>
+            </div>
+            <p>NCU stories can be explored without a shared-universe reading checklist.</p>
+          </div>
+          <div className="feature-grid">
+            <article className="feature-card"><span className="card-index">01 / PICK A WORLD</span><h3>Follow your interest.</h3><p>Choose any universe by genre, premise or artwork. The directory is not arranged by timeline.</p></article>
+            <article className="feature-card"><span className="card-index">02 / CHECK RELEASES</span><h3>Use the comic library.</h3><p>Find currently available comics and chapter-level reading details on Pylothouse.</p></article>
+            <article className="feature-card"><span className="card-index">03 / FOLLOW UPDATES</span><h3>Watch for confirmation.</h3><p>If a crossover order or special sequence is published, it will be added here as an official guide.</p></article>
+          </div>
+          <p className="notice-strip" style={{ marginTop: 26 }}>The list below is a discovery guide, not a release order. Exact series and chapter links will be added when confirmed.</p>
           <ol className="reading-list">
             {universes.map((universe, index) => (
               <li key={universe.slug}>

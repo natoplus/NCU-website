@@ -2,10 +2,12 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 const revealSelector = [
-  'main > section:not(.hero-section)',
+  'main > section:not(.hero-section):not(.home-hero)',
   '.universe-card',
   '.path-card',
   '.feature-card',
+  '.family-card',
+  '.news-empty',
   '.empty-state',
   '.legal-section',
 ].join(', ')

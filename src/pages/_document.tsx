@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta name="theme-color" content="#090a10" />
+        <meta name="theme-color" content="#0b0b0f" />
         <link rel="icon" type="image/webp" href="/assets/brand/ncu-logo.webp" />
       </Head>
       <body>

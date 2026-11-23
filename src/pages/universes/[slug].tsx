@@ -3,6 +3,7 @@ import type { CSSProperties } from 'react'
 import Link from 'next/link'
 import Seo from '@/components/Seo'
 import UniverseArtwork from '@/components/UniverseArtwork'
+import UniverseCard from '@/components/UniverseCard'
 import { getUniverse, universes, type Universe } from '@/data/universes'
 import { PYLOTHOUSE_COMICS_URL } from '@/lib/site'
 
@@ -50,6 +51,22 @@ export default function UniversePage({ universe }: InferGetStaticPropsType<typeo
             ))}
           </div>
           <p className="notice-strip" style={{ marginTop: 26 }}>Ratings, content notes and chapter-specific spoiler controls will be shown when approved release information is available.</p>
+        </div>
+      </section>
+      <section className="section section-border">
+        <div className="site-container">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Beyond this world</p>
+              <h2>Explore another<br />NCU universe.</h2>
+            </div>
+            <p>Every universe is a separate starting point. These suggestions do not imply a crossover or reading order.</p>
+          </div>
+          <div className="universe-grid">
+            {universes.filter((item) => item.slug !== universe.slug).slice(0, 3).map((item) => (
+              <UniverseCard key={item.slug} universe={item} />
+            ))}
+          </div>
         </div>
       </section>
       <section className="section section-border">

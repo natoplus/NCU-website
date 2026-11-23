@@ -19,7 +19,7 @@ export default function Seo({ title, description = SITE_DESCRIPTION, image = '/a
     <Head>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      <meta name="theme-color" content="#090a10" />
+      <meta name="theme-color" content="#0b0b0f" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />

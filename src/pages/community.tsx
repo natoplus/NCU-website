@@ -39,6 +39,22 @@ export default function CommunityPage() {
           </div>
         </div>
       </section>
+      <section className="section section-border">
+        <div className="site-container">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Fan creativity</p>
+              <h2>Celebrate the worlds.<br />Respect the work.</h2>
+            </div>
+            <p>These notes apply to fan discussion and creation; they do not grant rights to reproduce or commercialize NCU material.</p>
+          </div>
+          <div className="feature-grid">
+            <article className="feature-card"><span className="card-index">FAN ART &amp; FICTION</span><h3>Make it clearly yours.</h3><p>Label fan-created work as unofficial, credit the inspiration where appropriate and do not present it as an official NCU release.</p></article>
+            <article className="feature-card"><span className="card-index">SPOILERS</span><h3>Give readers a choice.</h3><p>Use a clear warning before discussing details beyond a published introduction or chapter.</p></article>
+            <article className="feature-card"><span className="card-index">OFFICIAL SPACES</span><h3>Follow verified links.</h3><p>Only trust community channels linked directly by Nartstudio. No NCU forum or Discord invite is published here.</p></article>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

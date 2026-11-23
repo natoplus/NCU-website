@@ -48,7 +48,7 @@ export function SiteHeader() {
         <BrandSwitcher />
         <div className="header-inner site-container">
           <Link className="site-logo" href="/" aria-label="NCU home">
-            <img src="/assets/brand/ncu-logo.webp" alt="" width="90" height="52" />
+            <img src="/assets/brand/ncu-logo.webp" alt="" width="90" height="62" />
             <span>NARTSTUDIO<br />COMIC UNIVERSE</span>
           </Link>
           <div className="header-tools">
@@ -97,7 +97,7 @@ export function SiteFooter() {
       <div className="site-container footer-main">
         <div className="footer-brand">
           <Link className="footer-mark" href="/" aria-label="NCU home">
-            <img src="/assets/brand/ncu-logo.webp" alt="" width="180" height="102" />
+            <img src="/assets/brand/ncu-logo.webp" alt="" width="180" height="124" />
           </Link>
           <p>Original comic worlds from Nartstudio. Discover the stories here; read available comics on Pylothouse.</p>
         </div>
